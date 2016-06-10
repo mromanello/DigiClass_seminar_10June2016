@@ -272,7 +272,7 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>putting named entity reconignition into context</li>
+<li>putting NER into context</li>
 </ul>
 
 </div>
@@ -284,7 +284,19 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>discipline-specificity</li>
+<li>NER in Classis (people, places)</li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>NER in Classis (references)</li>
 </ul>
 
 </div>
@@ -583,13 +595,65 @@ a.anchor-link {
 <h3 id="Rule-based">Rule-based<a class="anchor-link" href="#Rule-based">&#182;</a></h3>
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>hand-crafted rules</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>exploits information:<ul>
+<li>morphosyntactic</li>
+<li>lexical (dictionaries, gazetteers)</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Examples:<ul>
+<li>firstname + uppercased word → Person</li>
+<li>unknown word + ”.Inc” → Organisation</li>
+<li>proper name + &amp; + proper name → Organisation</li>
+<li>location + action verb → Geopolitical</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
 </div></div><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Statistical">Statistical<a class="anchor-link" href="#Statistical">&#182;</a></h3>
+<h3 id="Statistical">Statistical<a class="anchor-link" href="#Statistical">&#182;</a></h3><ul>
+<li>estimate the probability of a category for a word or a sequence of words</li>
+<li>requires annotated data</li>
+<li>probabilistic models based on words and tags</li>
+<li>probabilistic models based on multiple features</li>
+</ul>
+
 </div>
 </div>
 </div></div></section><section>
@@ -598,10 +662,7 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Evaluation">Evaluation<a class="anchor-link" href="#Evaluation">&#182;</a></h2><ul>
-<li>4 error types: TP, FP, TN</li>
-<li>Measures: Precision, Recall, F-Score</li>
-</ul>
+<h2 id="Evaluation">Evaluation<a class="anchor-link" href="#Evaluation">&#182;</a></h2><p><img src="http://yanirs.github.io/talks/the-hardest-part-of-data-science/img/precision-recall.svg" alt="precision recall"></p>
 
 </div>
 </div>
@@ -791,7 +852,31 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Coptic-Scriptorium">Coptic Scriptorium<a class="anchor-link" href="#Coptic-Scriptorium">&#182;</a></h2>
+<h2 id="Coptic-Scriptorium">Coptic Scriptorium<a class="anchor-link" href="#Coptic-Scriptorium">&#182;</a></h2><p><img src="imgs/coptic_scriptorium.png" alt="Coptic Scriptorium">
+<a href="http://data.copticscriptorium.org/urn:cts:copticLit:shenoute.fox.monbxh_204_216">http://data.copticscriptorium.org/urn:cts:copticLit:shenoute.fox.monbxh_204_216</a></p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="eXternally-configurable-REference-and-Non-Named-Entity-Recognizer">eXternally configurable REference and Non Named Entity Recognizer<a class="anchor-link" href="#eXternally-configurable-REference-and-Non-Named-Entity-Recognizer">&#182;</a></h2><p><img src="imgs/xrenner1.png" alt="xrenner">
+<a href="https://corpling.uis.georgetown.edu/xrenner/">https://corpling.uis.georgetown.edu/xrenner/</a></p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="eXternally-configurable-REference-and-Non-Named-Entity-Recognizer">eXternally configurable REference and Non Named Entity Recognizer<a class="anchor-link" href="#eXternally-configurable-REference-and-Non-Named-Entity-Recognizer">&#182;</a></h2><p><img src="imgs/xrenner2.png" alt="xrenner">
+<a href="https://corpling.uis.georgetown.edu/xrenner/">https://corpling.uis.georgetown.edu/xrenner/</a></p>
+
 </div>
 </div>
 </div></section><section>
@@ -814,7 +899,184 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Demo-Test">Demo Test<a class="anchor-link" href="#Demo-Test">&#182;</a></h2><p><video src=""></video></p>
+<h2 id="Challenges">Challenges<a class="anchor-link" href="#Challenges">&#182;</a></h2>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>domain adaptation</li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>language adaptation</li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>lack of annotated datasets</li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>lack of language resources (gazetteers, knowledge bases, etc.)</li>
+</ul>
+
+</div>
+</div>
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Automatic-Extraction-of-Canonical-References">Automatic Extraction of Canonical References<a class="anchor-link" href="#Automatic-Extraction-of-Canonical-References">&#182;</a></h2>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="References-in-Classics">References in Classics<a class="anchor-link" href="#References-in-Classics">&#182;</a></h2>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Canonical-References">Canonical References<a class="anchor-link" href="#Canonical-References">&#182;</a></h3>
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Vergil, <em>Aen</em>. 12, 101-109</li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Thuc. I 89, 1</li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Hom. <em>Il.</em> 7.180 </li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="But-also-references-to:">But also references to:<a class="anchor-link" href="#But-also-references-to:">&#182;</a></h3>
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>inscriptions (e.g. CIL 3, 6174; AE 1991, 1405)</li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>papyri (e.g. PCair. inv. 10750)</li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>manuscripts (e.g. Vendôme, Bibl. mun. 31)</li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>fragmentary texts, coins, etc.</li>
+</ul>
+
+</div>
+</div>
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="L'Ann&#233;e-philologique-(APh)"><em>L'Ann&#233;e philologique (APh)</em><a class="anchor-link" href="#L'Ann&#233;e-philologique-(APh)">&#182;</a></h2><p><img src="./imgs/aph_shelf.jpg" alt="APh on the shelf"></p>
 
 </div>
 </div>
@@ -824,16 +1086,339 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Challenges">Challenges<a class="anchor-link" href="#Challenges">&#182;</a></h2>
+<h2 id="APh-Example">APh Example<a class="anchor-link" href="#APh-Example">&#182;</a></h2><p>APh 75-06697 =&gt; S. Braund &amp; G. Gilbert. 2004. “An ABC of epic ira: anger, beasts, and cannibalism” <em>Yale Classical Studies</em> 32:250-285</p>
+<blockquote><p>In <strong>Statius ' « Achilleid » (2, 96-102)</strong> Achilles describes his diet of wild animals in infancy, which rendered him fearless and may indicate another aspect of his character - a tendency toward aggression and anger.</p>
+<p>The portrayal of angry warriors in Roman epic is effected for the most part not by direct descriptions but indirectly, by similes of wild beasts <strong>(e.g. Vergil, Aen. 12, 101-109; Lucan 1, 204-212; Statius, Th. 12, 736-740; Silius 5, 306-315)</strong>.</p>
+<p>These similes may be compared to two passages from <strong>Statius (Th. 1, 395-433 and 8, 383-394)</strong> that portray the onset of anger in direct narrative.
+Analysis of these passages demonstrates that the concept of « ira » in epic takes its moral aspect from the context.</p>
+</blockquote>
+
 </div>
 </div>
-</div></section></section><section><section>
+</div></section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Automatic-Extraction-of-Canonical-References">Automatic Extraction of Canonical References<a class="anchor-link" href="#Automatic-Extraction-of-Canonical-References">&#182;</a></h2>
+<h2 id="Citation-Extraction:-Step-1-(NER)">Citation Extraction: Step 1 (NER)<a class="anchor-link" href="#Citation-Extraction:-Step-1-(NER)">&#182;</a></h2><p><img src="./imgs/extraction_step1.png" alt="extraction step 1"></p>
+<p>Named Entities (= citation components):</p>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><code>AAUTHOR</code> = ancient author </li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><code>AWORK</code> = ancient work</li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><code>REFAUWORK</code> = concise reference to author, work or both ("Pliny, nat.", "Thuc.")</li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><code>REFSCOPE</code> = indication of the cited passage ("11, 4, 11")</li>
+</ul>
+
+</div>
+</div>
+</div><aside class="notes">
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>domain adaptation: take problem/application and adapt NER to it</p>
+
+</div>
+</div>
+</div>
+</aside></div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Citation-Extraction:-Step-2-(Relation-Detection)">Citation Extraction: Step 2 (Relation Detection)<a class="anchor-link" href="#Citation-Extraction:-Step-2-(Relation-Detection)">&#182;</a></h2><p><img src="./imgs/extraction_step2.png" alt="extraction step 1"></p>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>reference = relation between two arguments (entities)<ul>
+<li>arg1: <code>aauthor</code> | <code>awork</code> | <code>refauwork</code></li>
+<li>arg2: <code>refscope</code></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>examples: <ul>
+<li>Ammianus (15, 8, 7) {<code>aauthor</code> + <code>refscope</code>}</li>
+<li>Trabajos 159–173” {<code>awork</code> + <code>refscope</code>}</li>
+<li>Thuc. 1.89.1 {<code>refauwork</code> + <code>refscope</code>}</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div><aside class="notes">
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>reference as <em>relation</em> vs. reference as <em>monolithic entity</em> </li>
+</ul>
+
+</div>
+</div>
+</div>
+</aside></div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Citation-Extraction:-Step-3-(Disambiguation)">Citation Extraction: Step 3 (Disambiguation)<a class="anchor-link" href="#Citation-Extraction:-Step-3-(Disambiguation)">&#182;</a></h2><p><img src="./imgs/extraction_step3.png" alt="extraction step 3"></p>
+<ul>
+<li>assign each author/work/canonical reference a unique ID</li>
+<li>IDs are CTS URNs</li>
+</ul>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Canonical-Text-Services-Unique-Resource-Names-(CTS-URNs)">Canonical Text Services Unique Resource Names (CTS URNs)<a class="anchor-link" href="#Canonical-Text-Services-Unique-Resource-Names-(CTS-URNs)">&#182;</a></h2><p>A machine-readable syntax for canonical references</p>
+<p><img src="./imgs/cts_urn_syntax.png" alt="CTS URN syntax"></p>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Homer<ul>
+<li><code>urn:cts:greekLit:tlg0012</code></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Homer's <em>Iliad</em><ul>
+<li><code>urn:cts:greekLit:tlg0012.tlg001</code></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Hom., <em>Il.</em> 1.1-10<ul>
+<li><code>urn:cts:greekLit:tlg0012.tlg001:1.1-1.10</code></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="The-Extraction-Pipeline">The Extraction Pipeline<a class="anchor-link" href="#The-Extraction-Pipeline">&#182;</a></h2><p><img src="imgs/pipeline.png" alt="pipeline"></p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Evaluation-Summary">Evaluation Summary<a class="anchor-link" href="#Evaluation-Summary">&#182;</a></h2><table>
+<thead><tr>
+<th style="text-align:left"><strong>Task</strong></th>
+<th style="text-align:left"><strong>Precision</strong></th>
+<th style="text-align:left"><strong>Recall</strong></th>
+<th style="text-align:left"><strong>F1 Score</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">NER</td>
+<td style="text-align:left">79.24%</td>
+<td style="text-align:left">69.62%</td>
+<td style="text-align:left">73.88%</td>
+</tr>
+<tr>
+<td style="text-align:left">RelEx</td>
+<td style="text-align:left">93.33%</td>
+<td style="text-align:left">91.87%</td>
+<td style="text-align:left">92.60%</td>
+</tr>
+<tr>
+<td style="text-align:left">NED</td>
+<td style="text-align:left">61.04%</td>
+<td style="text-align:left">90.94%</td>
+<td style="text-align:left">73.05%</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>methods:<ul>
+<li>NER: machine learning-based</li>
+<li>RelEx: rule-based</li>
+<li>NED: rule-based + knowledge base</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="NED:-Error-Types">NED: Error Types<a class="anchor-link" href="#NED:-Error-Types">&#182;</a></h2>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="ambiguous-abbreviation">ambiguous abbreviation<a class="anchor-link" href="#ambiguous-abbreviation">&#182;</a></h3><blockquote><p>But <strong>Horace</strong> undermines the suggestion that his own poetry will forever represent the Augustan Age. <strong>Carm. 4, 15</strong> in fact [...]</p>
+</blockquote>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="ambiguous-author-mention">ambiguous author mention<a class="anchor-link" href="#ambiguous-author-mention">&#182;</a></h3><blockquote><p>Esame dell’esegesi papiracea ad <strong>Aristofane</strong> : permanenza del lavoro degli eruditi alessandrini [...]</p>
+</blockquote>
+
+</div>
+</div>
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="NED:-Error-Types-(contd.)">NED: Error Types (contd.)<a class="anchor-link" href="#NED:-Error-Types-(contd.)">&#182;</a></h2>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="implicit-topicalisation">implicit topicalisation<a class="anchor-link" href="#implicit-topicalisation">&#182;</a></h3><blockquote><p>Dans son <strong>chap. 5</strong> sur le squelette et la respiration, <strong>Lactance</strong> utilise des sources disparates et arrive aux limites de son savoir médical.</p>
+</blockquote>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="ambiguously-expressed-reference">ambiguously expressed reference<a class="anchor-link" href="#ambiguously-expressed-reference">&#182;</a></h3><blockquote><p>Analysis of the pederastic poems in the Theocritean corpus <strong>(12 ; 23 ; 29 ; 30)</strong> reveals that <strong>Theocritus</strong> reflects on mutuality in a relationship [...]</p>
+</blockquote>
+
+</div>
+</div>
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Canonical-Reference-Extractor">Canonical Reference Extractor<a class="anchor-link" href="#Canonical-Reference-Extractor">&#182;</a></h2><p><video src="imgs/demo.mp4"></video></p>
+
 </div>
 </div>
 </div></section></section>
